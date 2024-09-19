@@ -1,19 +1,48 @@
+@font-face {
+  font-family: "AR CENA";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AR CENA"), url("ARCENA.woff") format("woff");
+}
+@font-face {
+  font-family: "Chomsky";
+  src: url("Chomsky.otf");
+}
+@font-face {
+  font-family: "Bluffolk";
+  src: url("Bluffolk.otf");
+}
+body {
+  background-color: #a1a1a1;
+}
+
 .main {
   border: 5px solid black;
+  background-color: white;
+}
+.main p {
+  font-family: "AR CENA";
+}
+.main h1 {
+  font-family: "Bluffolk";
+  text-align: center;
 }
 
 .intro {
-  border: 5px solid white;
-  background-color: #403426;
-  padding: 50%;
+  width: 100%;
+  height: 100%;
+  border: 5px solid black;
+  padding-top: 25%;
+  padding-bottom: 25%;
+  background: #403426 url("afcadventuresalbumv2.png");
+  background-size: inherit;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-position: center;
 }
 .intro h1 {
   text-align: center;
   color: white;
-}
-.intro::after {
-  background-image: url("afcadventuresalbum.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
+  font-size: 100px;
+  font-family: Chomsky;
 }/*# sourceMappingURL=default.css.map */
