@@ -6,11 +6,14 @@
   border: 5px solid white;
   background-color: #403426;
   padding: 50%;
-  background-image: url("afcadventuresalbum.png");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .intro h1 {
   text-align: center;
   color: white;
+}
+.intro::after {
+  background-image: url("afcadventuresalbum.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
 }/*# sourceMappingURL=default.css.map */

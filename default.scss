@@ -13,9 +13,10 @@ $introborder: 5px solid white;
         text-align: center;
         color:white;
     }
-    &::before {
+    &::after {
         background-image:url("afcadventuresalbum.png");
         background-size:cover;
         background-repeat:no-repeat;
+        z-index:-1;
     }
 }
