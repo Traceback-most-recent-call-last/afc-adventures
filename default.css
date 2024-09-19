@@ -22,15 +22,18 @@ body {
 }
 .main p {
   font-family: "AR CENA";
+  font-size: 20px;
 }
 .main h1 {
   font-family: "Bluffolk";
   text-align: center;
+  font-size: 40px;
 }
 
 .intro {
-  width: 100%;
-  height: 100%;
+  margin: auto;
+  width: 75%;
+  height: 75%;
   border: 5px solid black;
   padding-top: 25%;
   padding-bottom: 25%;
