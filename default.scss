@@ -9,11 +9,13 @@ $introborder: 5px solid white;
     border:$introborder;
     background-color:$darkbrown;
     padding:50%;
-    background-image:url("afcadventuresalbum.png");
-    background-size:cover;
-    background-repeat:no-repeat;
     h1 {
         text-align: center;
         color:white;
+    }
+    &::before {
+        background-image:url("afcadventuresalbum.png");
+        background-size:cover;
+        background-repeat:no-repeat;
     }
 }
