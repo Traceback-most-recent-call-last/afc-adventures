@@ -41,8 +41,7 @@ body{
     width:75%;
     height:75%;
     border:$mainborder;
-    padding-top:25%;
-    padding-bottom:25%;
+    padding-bottom:25px;
 
     background:$darkbrown url("afcadventuresalbumv2.png");
     background-size:inherit;
@@ -54,5 +53,9 @@ body{
         color:white;
         font-size:100px;
         font-family:Chomsky;
+    }
+    iframe {
+        display:block;
+        margin:auto;
     }
 }
