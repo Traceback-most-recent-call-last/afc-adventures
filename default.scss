@@ -1,7 +1,9 @@
 $darkbrown: #403426;
 $gray:#a1a1a1;
 $mainborder: 5px solid black;
-$introborder: 5px solid white;
+$grayborder: 10px solid #888888;
+$mainfont: "AR CENA" 20px;
+
 @font-face {
     font-family: 'AR CENA';
     font-style: normal;
@@ -19,8 +21,30 @@ $introborder: 5px solid white;
     src: url('Bluffolk.otf');
 }
 
-body{
+body {
     background-color:$gray;
+}
+
+div{
+    margin-bottom: 20px;
+}
+
+.menu-bar {
+    background-color: white;
+    padding:10px;
+    border:$mainborder;
+    font-family:"AR CENA";
+    font:$mainfont;
+    ul {
+        li {
+            display:inline;
+            &:not(:last-child) {
+                margin-right: 5px;
+                padding-right: 5px;
+                border-right: 1px solid;
+            }
+        }
+    }
 }
 
 .main {
@@ -36,8 +60,25 @@ body{
         font-size:40px;
     }
 }
+
+.alt {
+    border:$mainborder;
+    background-color:$darkbrown;
+    color:white;
+    p {
+        font-family:"AR CENA";
+        font-size:20px;
+    }
+    h1 {
+        font-family:"Bluffolk";
+        text-align: center;
+        font-size:40px;
+    }
+}
+
 .intro {
-    margin:auto;
+    margin-left:auto;
+    margin-right:auto;
     width:75%;
     height:75%;
     border:$mainborder;
@@ -57,5 +98,57 @@ body{
     iframe {
         display:block;
         margin:auto;
+    }
+}
+
+.characterbox1 {
+    border:$mainborder;
+    background-color:white;
+    overflow:hidden;
+    width:50%;
+    p {
+        font-family:"AR CENA";
+        font-size:20px;
+        text-align: right;
+    }
+    h1 {
+        font-family:"Bluffolk";
+        text-align: center;
+        font-size:40px;
+    }
+    img {
+        float:left;
+        padding:10px;
+        border:$grayborder;
+        margin:5px;
+        height:250px;
+        width:250px;
+    }
+}
+
+.characterbox2 {
+    border:$mainborder;
+    background-color:white;
+    overflow:hidden;
+    width:50%;
+    margin-right:0;
+    margin-left:auto;
+    p {
+        font-family:"AR CENA";
+        font-size:20px;
+        text-align: left;
+    }
+    h1 {
+        font-family:"Bluffolk";
+        text-align: center;
+        font-size:40px;
+    }
+    img {
+        float:right;
+        padding:10px;
+        border:$grayborder;
+        margin:5px;
+        height:250px;
+        width:250px;
     }
 }

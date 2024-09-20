@@ -16,6 +16,26 @@ body {
   background-color: #a1a1a1;
 }
 
+div {
+  margin-bottom: 20px;
+}
+
+.menu-bar {
+  background-color: white;
+  padding: 10px;
+  border: 5px solid black;
+  font-family: "AR CENA";
+  font: "AR CENA" 20px;
+}
+.menu-bar ul li {
+  display: inline;
+}
+.menu-bar ul li:not(:last-child) {
+  margin-right: 5px;
+  padding-right: 5px;
+  border-right: 1px solid;
+}
+
 .main {
   border: 5px solid black;
   background-color: white;
@@ -30,8 +50,24 @@ body {
   font-size: 40px;
 }
 
+.alt {
+  border: 5px solid black;
+  background-color: #403426;
+  color: white;
+}
+.alt p {
+  font-family: "AR CENA";
+  font-size: 20px;
+}
+.alt h1 {
+  font-family: "Bluffolk";
+  text-align: center;
+  font-size: 40px;
+}
+
 .intro {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 75%;
   height: 75%;
   border: 5px solid black;
@@ -51,4 +87,56 @@ body {
 .intro iframe {
   display: block;
   margin: auto;
+}
+
+.characterbox1 {
+  border: 5px solid black;
+  background-color: white;
+  overflow: hidden;
+  width: 50%;
+}
+.characterbox1 p {
+  font-family: "AR CENA";
+  font-size: 20px;
+  text-align: right;
+}
+.characterbox1 h1 {
+  font-family: "Bluffolk";
+  text-align: center;
+  font-size: 40px;
+}
+.characterbox1 img {
+  float: left;
+  padding: 10px;
+  border: 10px solid #888888;
+  margin: 5px;
+  height: 250px;
+  width: 250px;
+}
+
+.characterbox2 {
+  border: 5px solid black;
+  background-color: white;
+  overflow: hidden;
+  width: 50%;
+  margin-right: 0;
+  margin-left: auto;
+}
+.characterbox2 p {
+  font-family: "AR CENA";
+  font-size: 20px;
+  text-align: left;
+}
+.characterbox2 h1 {
+  font-family: "Bluffolk";
+  text-align: center;
+  font-size: 40px;
+}
+.characterbox2 img {
+  float: right;
+  padding: 10px;
+  border: 10px solid #888888;
+  margin: 5px;
+  height: 250px;
+  width: 250px;
 }/*# sourceMappingURL=default.css.map */
