@@ -1,6 +1,6 @@
 $darkbrown: #403426;
 $gray:#a1a1a1;
-$roundededges: 4px;
+$roundededges: 8px;
 $mainborder: 5px solid black;
 $grayborder: 10px solid #888888;
 $mainfont: "AR CENA" 20px;
@@ -200,8 +200,8 @@ div{
 .gallery {
     margin:auto;
     padding: 0 6px;
-    float: left;
-    width: 24.99999%;
+    display:inline-flex;
+    width: 20%;
     img {
         width:100%;
         height:auto;
