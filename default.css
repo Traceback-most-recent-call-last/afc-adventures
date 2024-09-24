@@ -18,12 +18,14 @@ body {
 
 div {
   margin-bottom: 20px;
+  border-radius: 4px;
 }
 
 .menu-bar {
   background-color: white;
   padding: 10px;
   border: 5px solid black;
+  border-radius: 4px;
   font-family: "AR CENA";
   font: "AR CENA" 20px;
 }
@@ -38,11 +40,17 @@ div {
 
 .main {
   border: 5px solid black;
+  border-radius: 4px;
   background-color: white;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main p {
   font-family: "AR CENA";
   font-size: 20px;
+  padding-left: 20px;
 }
 .main h1 {
   font-family: "Bluffolk";
@@ -51,13 +59,19 @@ div {
 }
 
 .alt {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   border: 5px solid black;
+  border-radius: 4px;
   background-color: #403426;
   color: white;
+  width: 90%;
 }
 .alt p {
   font-family: "AR CENA";
   font-size: 20px;
+  padding-left: 20px;
 }
 .alt h1 {
   font-family: "Bluffolk";
@@ -71,6 +85,7 @@ div {
   width: 75%;
   height: 75%;
   border: 5px solid black;
+  border-radius: 4px;
   padding-bottom: 10px;
   background: #403426 url("afcadventuresalbumv2.png");
   background-size: inherit;
@@ -112,6 +127,7 @@ div {
 
 .characterbox1 {
   border: 5px solid black;
+  border-radius: 4px;
   background-color: white;
   overflow: hidden;
   width: 50%;
@@ -138,6 +154,7 @@ div {
 
 .characterbox2 {
   border: 5px solid black;
+  border-radius: 4px;
   background-color: white;
   overflow: hidden;
   width: 50%;

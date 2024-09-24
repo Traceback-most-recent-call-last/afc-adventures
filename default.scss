@@ -1,5 +1,6 @@
 $darkbrown: #403426;
 $gray:#a1a1a1;
+$roundededges: 4px;
 $mainborder: 5px solid black;
 $grayborder: 10px solid #888888;
 $mainfont: "AR CENA" 20px;
@@ -27,12 +28,14 @@ body {
 
 div{
     margin-bottom: 20px;
+    border-radius: 4px;
 }
 
 .menu-bar {
     background-color: white;
     padding:10px;
     border:$mainborder;
+    border-radius:$roundededges;
     font-family:"AR CENA";
     font:$mainfont;
     ul {
@@ -49,10 +52,16 @@ div{
 
 .main {
     border:$mainborder;
+    border-radius:$roundededges;
     background-color:white;
+    width:90%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
     p {
         font-family:"AR CENA";
         font-size:20px;
+        padding-left:20px;
     }
     h1 {
         font-family:"Bluffolk";
@@ -62,12 +71,18 @@ div{
 }
 
 .alt {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
     border:$mainborder;
+    border-radius:$roundededges;
     background-color:$darkbrown;
     color:white;
+    width:90%;
     p {
         font-family:"AR CENA";
         font-size:20px;
+        padding-left: 20px;
     }
     h1 {
         font-family:"Bluffolk";
@@ -82,6 +97,7 @@ div{
     width:75%;
     height:75%;
     border:$mainborder;
+    border-radius:$roundededges;
     padding-bottom:10px;
     background:$darkbrown url("afcadventuresalbumv2.png");
     background-size:inherit;
@@ -121,6 +137,7 @@ div{
 
 .characterbox1 {
     border:$mainborder;
+    border-radius:$roundededges;
     background-color:white;
     overflow:hidden;
     width:50%;
@@ -147,6 +164,7 @@ div{
 
 .characterbox2 {
     border:$mainborder;
+    border-radius:$roundededges;
     background-color:white;
     overflow:hidden;
     width:50%;
