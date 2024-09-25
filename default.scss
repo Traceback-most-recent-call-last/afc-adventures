@@ -5,6 +5,8 @@ $mainborder: 5px solid black;
 $grayborder: 10px solid #888888;
 $mainfont: "AR CENA" 20px;
 
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');
+
 @font-face {
     font-family: 'AR CENA';
     font-style: normal;
@@ -54,9 +56,11 @@ a:hover {
     ul {
         li {
             display:inline;
+            font-family: "Jacquarda Bastarda 9";
+            font-size:20px;
             &:not(:last-child) {
                 margin-right: 5px;
-                padding-right: 5px;
+                padding-right: 10px;
                 border-right: 1px solid;
             }
         }
@@ -203,6 +207,7 @@ a:hover {
         width:250px;
     }
 }
+
 
 .responsive {
     padding: 0 6px;
