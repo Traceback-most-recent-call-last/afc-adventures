@@ -212,6 +212,8 @@ a:hover {
 .gallery img {
   width: 100%;
   height: auto;
+  border: gold 6px double;
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 800px) {
