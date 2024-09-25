@@ -19,6 +19,40 @@
                 <iframe id="trailer" width="1280" height="720" src="https://www.youtube.com/embed/YRicW3UJk4Y" title="AFC Adventures Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div> 
         </div>
+        <div class="alt">
+            <h1>COUNTDOWN TO AFC:</h1>
+            <p id="countdown"></p>
+            <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("Sep 28, 2024 9:30:00").getTime();
+                
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+                
+                  // Get today's date and time
+                  var now = new Date().getTime();
+                
+                  // Find the distance between now and the count down date
+                  var distance = countDownDate - now;
+                
+                  // Time calculations for days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                  // Display the result in the element with id="demo"
+                  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+                  + minutes + "m " + seconds + "s ";
+                
+                  // If the count down is finished, write some text
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "TIME TO SET SAIL!!";
+                  }
+                }, 1000);
+                </script>
+        </div>
         <div class="main">
             <h1>What is this?</h1>
             <p>This website is designed to track our adventures through AFC, or Another Furry Con! You can find them <a href="https://www.anotherfurrycon.com/">here.</a></p>

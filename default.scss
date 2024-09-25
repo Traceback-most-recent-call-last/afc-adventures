@@ -24,6 +24,11 @@ $mainfont: "AR CENA" 20px;
     src: url('Bluffolk.otf');
 }
 
+@font-face {
+    font-family: "Upheaval";
+    src: url('upheavtt.ttf')
+}
+
 body {
     background-image:$graydient;
 }
@@ -226,6 +231,12 @@ a:hover {
         border:gold 6px double;
         border-radius: 4px;
     }
+}
+
+#countdown {
+    font-family:"Upheaval";
+    text-align: center;
+    font-size: 75px;
 }
 
 @media screen and (max-width: 800px) {
