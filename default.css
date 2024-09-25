@@ -13,12 +13,25 @@
   src: url("Bluffolk.otf");
 }
 body {
-  background-color: #a1a1a1;
+  background-image: linear-gradient(#a1a1a1, #565656);
 }
 
 div {
   margin-bottom: 20px;
   border-radius: 4px;
+}
+
+a {
+  color: #a1a1a1;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #888888;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .menu-bar {

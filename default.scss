@@ -1,5 +1,5 @@
 $darkbrown: #403426;
-$gray:#a1a1a1;
+$graydient: linear-gradient(#a1a1a1, #565656);
 $roundededges: 8px;
 $mainborder: 5px solid black;
 $grayborder: 10px solid #888888;
@@ -23,12 +23,25 @@ $mainfont: "AR CENA" 20px;
 }
 
 body {
-    background-color:$gray;
+    background-image:$graydient;
 }
 
 div{
     margin-bottom: 20px;
     border-radius: 4px;
+}
+
+a {
+    color: #a1a1a1;
+    text-decoration:none;
+}
+
+a:visited {
+    color:#888888
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .menu-bar {
