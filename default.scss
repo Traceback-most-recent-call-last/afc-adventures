@@ -42,3 +42,12 @@ div {
     margin-left:20%;
     margin-right:20%;
 }
+.header {
+    background-color:$brown;
+    color:white;
+    padding:64px;
+    border-width:8px;
+    h1 {
+        font-size:96px;
+    }
+}

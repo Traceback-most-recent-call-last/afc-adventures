@@ -39,4 +39,14 @@ div p {
   font-size: 32px;
   font-weight: bold;
   text-align: center;
+}
+
+.header {
+  background-color: #B17457;
+  color: white;
+  padding: 64px;
+  border-width: 8px;
+}
+.header h1 {
+  font-size: 96px;
 }/*# sourceMappingURL=default.css.map */
