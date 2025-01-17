@@ -1,255 +1,44 @@
-$darkbrown: #403426;
-$graydient: linear-gradient(#a1a1a1, #565656);
-$roundededges: 8px;
-$mainborder: 5px solid black;
-$grayborder: 10px solid #888888;
-$mainfont: "AR CENA" 20px;
-
-@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');
-
+$brown:#B17457;
+$beigewhite:#D8D2C2;
+$white:#FAF7F0;
+$black:#4A4947;
 @font-face {
-    font-family: 'AR CENA';
-    font-style: normal;
-    font-weight: normal;
-    src: local('AR CENA'), url('ARCENA.woff') format('woff');
+    font-family: Dinopia;
+    src: url(DinopiaRegular-mLrO9.otf);
 }
-
 @font-face {
-    font-family: 'Chomsky';
-    src: url('Chomsky.otf');
+    font-family: StoneHinge;
+    src: url(StoneHinge-aa8m.ttf);
 }
-
-@font-face {
-    font-family: 'Bluffolk';
-    src: url('Bluffolk.otf');
-}
-
-@font-face {
-    font-family: "Upheaval";
-    src: url('upheavtt.ttf')
-}
-
 body {
-    background-image:$graydient;
+    background-color:$beigewhite;
 }
-
-div{
-    margin-bottom: 20px;
-    border-radius: 4px;
-}
-
-a {
-    color: #a1a1a1;
-    text-decoration:none;
-}
-
-a:visited {
-    color:#888888
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.menu-bar {
-    background-color: white;
-    padding:10px;
-    border:$mainborder;
-    border-radius:$roundededges;
-    font-family:"AR CENA";
-    font:$mainfont;
-    ul {
-        li {
-            display:inline;
-            font-family: "Jacquarda Bastarda 9";
-            font-size:20px;
-            &:not(:last-child) {
-                margin-right: 5px;
-                padding-right: 10px;
-                border-right: 1px solid;
-            }
-        }
-    }
-}
-
-.main {
-    border:$mainborder;
-    border-radius:$roundededges;
-    background-color:white;
-    width:90%;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    p {
-        font-family:"AR CENA";
-        font-size:20px;
-        padding-left:20px;
-    }
+div {
+    background-color:$white;
+    border:4px solid $black;
     h1 {
-        font-family:"Bluffolk";
-        text-align: center;
-        font-size:40px;
+        text-align:center;
+        font-family:Dinopia;
+        font-size:48px;
     }
+    p {
+        font-family:StoneHinge;
+    }
+    margin:8px;
+    padding:8px;
 }
-
-.alt {
-    margin-left:auto;
-    margin-right:auto;
-    display:block;
-    border:$mainborder;
-    border-radius:$roundededges;
-    background-color:$darkbrown;
+.countdown {
+    background-color:$brown;
     color:white;
-    width:90%;
+    h1 {
+        font-size:64px;
+    }
     p {
-        font-family:"AR CENA";
-        font-size:20px;
-        padding-left: 20px;
+        font-size:32px;
+        font-weight:bold;
+        text-align:center;
     }
-    h1 {
-        font-family:"Bluffolk";
-        text-align: center;
-        font-size:40px;
-    }
+    border:8px $black solid;
+    margin-left:20%;
+    margin-right:20%;
 }
-
-.intro {
-    margin-left:auto;
-    margin-right:auto;
-    width:75%;
-    height:75%;
-    border:$mainborder;
-    border-radius:$roundededges;
-    padding-bottom:10px;
-    background:$darkbrown url("afcadventuresalbumv2.png");
-    background-size:inherit;
-    background-repeat:no-repeat;
-    background-blend-mode: overlay;
-    background-position: center;
-    h1 {
-        text-align: center;
-        color:white;
-        font-size:100px;
-        font-family:Chomsky;
-    }
-}
-
-.video {
-    position: relative;
-    padding-top: 35px;
-    padding-bottom: 56.25%;
-    height: 100%;
-    width:100%;
-    iframe {
-        margin-left:auto;
-        margin-right:auto;
-        position: absolute;
-        top: 0; right: 0;
-        bottom: 0; left: 0;
-        width: 75%;
-        height: 75%;
-        display:block;
-        #trailer {
-            height:720px;
-            width:1280px;
-            margin-bottom:auto;
-        }
-    }
-}
-
-.characterbox1 {
-    border:$mainborder;
-    border-radius:$roundededges;
-    background-color:white;
-    overflow:hidden;
-    width:50%;
-    p {
-        font-family:"AR CENA";
-        font-size:20px;
-        text-align: right;
-        padding:5px;
-    }
-    h1 {
-        font-family:"Bluffolk";
-        text-align: center;
-        font-size:40px;
-    }
-    img {
-        float:left;
-        padding:10px;
-        border:$grayborder;
-        margin:5px;
-        height:250px;
-        width:250px;
-    }
-}
-
-.characterbox2 {
-    border:$mainborder;
-    border-radius:$roundededges;
-    background-color:white;
-    overflow:hidden;
-    width:50%;
-    margin-right:0;
-    margin-left:auto;
-    p {
-        font-family:"AR CENA";
-        font-size:20px;
-        text-align: left;
-        padding:5px;
-    }
-    h1 {
-        font-family:"Bluffolk";
-        text-align: center;
-        font-size:40px;
-    }
-    img {
-        float:right;
-        padding:10px;
-        border:$grayborder;
-        margin:5px;
-        height:250px;
-        width:250px;
-    }
-}
-
-
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-  }
-
-.gallery {
-    margin:auto;
-    padding: 0 6px;
-    display:inline-flex;
-    width: 20%;
-    img {
-        width:100%;
-        height:auto;
-        border:gold 6px double;
-        border-radius: 4px;
-    }
-}
-
-#countdown {
-    font-family:"Upheaval";
-    text-align: center;
-    font-size: 75px;
-}
-
-@media screen and (max-width: 800px) {
-    .responsive {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .responsive {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }

@@ -5,39 +5,44 @@
         <title>Welcome to the Adventure!</title>
     </head>
     <body>
-        <div class="menu-bar">
-            <ul>
-                <li>Home</li>
-                <li><a href="team.html">Meet the Team</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="links.html">Links</a></li>
-            </ul>
+        <div class="countdown">
+            <h1>Countdown to AFC 2025</h1>
+            <p id="cd"></p>
+
+            <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Sep 20, 2025 10:00:00").getTime();
+            
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+            
+              // Get today's date and time
+              var now = new Date().getTime();
+            
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+            
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+              // Display the result in the element with id="demo"
+              document.getElementById("cd").innerHTML = days + " days, " + hours + " hours, "
+              + minutes + " minutes, " + seconds + " seconds ";
+            
+              // If the count down is finished, write some text
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("cd").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+            </script>
         </div>
-        <div class="intro">
-            <h1>WELCOME!</h1>
-            <div class="video">
-                <iframe id="trailer" width="1280" height="720" src="https://www.youtube.com/embed/YRicW3UJk4Y" title="AFC Adventures Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div> 
-        </div>
-        <div class="alt">
-            <h1>The adventure has concluded.</h1>
-            <p id="countdown">THANKS FOR COMING ALONG!</p>
-        </div>
-        <div class="main">
-            <h1>What is this?</h1>
-            <p>This website is designed to track our adventures through AFC, or Another Furry Con! You can find them <a href="https://www.anotherfurrycon.com/">here.</a></p>
-        </div>
-        <div class="alt">
-            <h1>Wanna learn more about the crew?</h1>
-            <p>Check out this page <a href="team.html">here!</a></p>
-        </div>
-        <div class="main">
-            <h1>Wanna see photos made or taken during AFC?</h1>
-            <p>Check out the gallery <a href="gallery.html">here!</a></p>
-        </div>
-        <div class="alt">
-            <h1>Wanna find elsillygato elsewhere?</h1>
-            <p>Check out the links <a href="links.html">here!</a></p>
+        <div>
+            <h1>Welcome (back) to the adventure!</h1>
+            <p>Currently, there is no content right now. Check back soon as more updates are posted!</p>
         </div>
     </body>
 </html>
