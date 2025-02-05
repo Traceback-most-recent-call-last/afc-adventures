@@ -43,10 +43,15 @@ div {
     margin-right:20%;
 }
 .header {
-    background-color:$brown;
     color:white;
     padding:64px;
     border-width:8px;
+    margin:auto;
+    width:784px;
+    background:$brown url(afcadventuresch2.png);
+    background-blend-mode: overlay;
+    background-position:center;
+    background-repeat: no-repeat;
     h1 {
         font-size:96px;
     }
